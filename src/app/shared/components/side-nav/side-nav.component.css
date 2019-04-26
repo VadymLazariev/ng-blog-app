@@ -1,0 +1,32 @@
+.side-nav__logo {
+    letter-spacing: 2px;
+    padding: 30px
+}
+
+.side-nav__content {
+    padding: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul>li {
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #555;
+    transition: border-bottom 0.2s, color 0.2s;
+}

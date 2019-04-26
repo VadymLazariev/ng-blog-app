@@ -1,0 +1,31 @@
+.post {
+    width: 80%;
+    margin: auto;
+    transition: .3s;
+}
+
+.post__avatar {
+    background-image: url('../../../../assets/img/avatar.jpg');
+    background-size: cover;
+}
+
+.post__description {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.post__image {
+    height: 219px;
+    object-fit: cover;
+}
+
+.post:hover {
+    transform: translateY(-10px);
+    box-shadow: -1px 10px 5px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.post:active {
+    transform: translateY(10px);
+}

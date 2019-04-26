@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+html, body { height: 100%;  }
+body { margin: 0; font-family: 'Josefin Sans', sans-serif; }
+* {
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box
+}

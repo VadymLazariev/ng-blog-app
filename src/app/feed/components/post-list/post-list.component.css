@@ -1,0 +1,25 @@
+.posts-list {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-list__item {
+    height: 430px;
+    width: 550px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+    .posts-list {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .post-list__item {
+        height: 430px;
+        width: 100%;
+    }
+}

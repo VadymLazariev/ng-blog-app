@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container--padding{
+    padding: 50px;
+}
+
+.container--height {
+    height: 100vh;
+}
+
+.container--content-height {
+       flex: 1 0 auto;
+}
+
+@media screen and (max-width: 1050px) {
+    .container--padding{
+        padding: 0;
+    }
+}

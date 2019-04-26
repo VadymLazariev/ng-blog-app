@@ -1,0 +1,28 @@
+.img-dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-dialog__file-load {
+    display: flex;
+    align-items: center;
+}
+
+.img-dialog--display-none {
+    display: none;
+}
+
+.img-dialog--padding-b-10 {
+    padding-bottom: 10px;
+}
+
+.img-dialog--padding-r-10 {
+    padding-right: 10px;
+}
+
+
+mat-form-field {
+    width: 100%;
+}

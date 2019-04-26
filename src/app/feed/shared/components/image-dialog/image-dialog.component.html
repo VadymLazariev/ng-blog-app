@@ -1,0 +1,21 @@
+<form class="img-dialog" [formGroup]="imgDialogForm">
+    <h1 mat-dialog-title>Load Image</h1>
+    <div mat-dialog-content>
+      <p class="img-dialog--padding-b-10">Choose how to add image: </p>
+      <p>You can put link to your image here</p>
+      <mat-form-field>
+        <input matInput formControlName="imageLink">
+      </mat-form-field>
+      <div class="img-dialog__file-load">
+          <p class="img-dialog--padding-r-10">or load from file: </p>
+          <button (click)="fileInput.click()" mat-raised-button color="primary">
+              <span>Add Image</span>
+              <input class="img-dialog--display-none" #fileInput (change)="onFileInput($event)" type="file" />
+          </button>
+      </div>
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button (click)="close()">No Thanks</button>
+      <button mat-button (click)="save()"cdkFocusInitial>Ok</button>
+    </div>
+  </form>

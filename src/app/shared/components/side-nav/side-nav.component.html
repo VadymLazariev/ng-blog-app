@@ -1,0 +1,21 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav  mode="side" class="example-sidenav" [opened]= "IsOpened" >
+      <div class="side-nav__logo">Blog</div>
+      <div class="side-nav__content">
+        <ul>
+          <li><a href="" [routerLink]="['']">Home</a></li>
+          <li><a href="" [routerLink]="['feed/create-post']">Create Post</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Contact</a></li>
+            <ng-container *ngIf="!isLoggedIn; else logOut">
+               <li><a href="" [routerLink]="['/auth']">Log in</a></li>
+               <li><a href="" [routerLink]="['/auth/sign-up']">Sign up</a></li>
+            </ng-container>
+            <ng-template #logOut>
+              <li><a href="" (click)="logout()">Log out</a></li>
+            </ng-template>
+        </ul>
+      </div>
+    </mat-sidenav>
+    <ng-content></ng-content>      
+</mat-sidenav-container>

@@ -1,0 +1,40 @@
+<form class="new-post" [formGroup] = "createPostForm">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Create New Post</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="new-post--field-padding">
+        <mat-form-field>
+          <input matInput formControlName="title" placeholder="Post Title">
+        </mat-form-field>
+      </div>
+      <div class="new-post--field-padding">
+        <mat-form-field>
+          <input matInput formControlName="author" placeholder="Author">
+        </mat-form-field>
+      </div>
+      <div class="new-post--field-padding">
+        <mat-form-field>
+          <textarea matInput formControlName="content" placeholder="Content" cols="20" rows="10"></textarea>
+        </mat-form-field>
+      </div>
+      <div class="new-post--field-padding">
+        <mat-form-field>
+          <textarea matInput formControlName="description" placeholder="Description" cols="20" rows="10"></textarea>
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+    <div class="new-post__post-actions">
+      <mat-card-actions>
+        <button (click)="openDialog()" mat-raised-button color="primary">
+          <span>Add Image</span>
+        </button>
+      </mat-card-actions>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="submit()" >Ok</button>
+        <button mat-raised-button color="primary" [routerLink]="['']">Cancel</button>
+      </mat-card-actions>
+    </div>
+  </mat-card>
+</form>

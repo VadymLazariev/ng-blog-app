@@ -1,0 +1,49 @@
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-form__actions {
+    justify-self: flex-end;
+}
+
+mat-card {
+    width: 15%;
+    margin: auto;
+    position: relative;
+    height: 50%;
+    transform: translateY(50%);
+}
+
+@media screen and (max-width:1600px) {
+    mat-card {
+        width: 30%
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    mat-card {
+        width: 40%
+    }
+}
+
+@media screen and (max-width:900px) {
+    mat-card {
+        width: 50%
+    }
+}
+
+@media screen and (max-width:800px) {
+    mat-card {
+        width: 70%
+    }
+}
+
+@media screen and (max-width:600px) {
+    mat-card {
+        width: 100%
+    }
+}
